@@ -1,0 +1,311 @@
+@charset "utf-8";
+@media all and (max-width:1024px){
+    *{margin:0 auto; padding:0 auto; list-style:none; color:#333;}
+    a:link,a:visited,a:hover,a:active{
+        color:#333;
+        text-decoration: none;
+        font-family: 'G마켓 산스 TTF', sans-serif;
+        font-weight: 300;
+    }
+    .clear::after{
+        content:'';
+        display:block;
+        clear:both;
+        width:0; height:0;
+        visibility:hidden;
+    }
+    .header{
+        background: #B3E2E7;
+        width:100%; height: auto;
+        padding:10px 0px;
+        position:relative;
+    }
+    .util{
+        display:none;
+        margin:20px auto;
+        padding:10px 0;
+        text-align:center;
+        background: rgba(255,255,255,0.5);
+    }
+    .util ul{padding:0;}
+    .util li{
+        display:inline-block;
+        margin-right:20px;
+        border-right:1px solid #666;
+    }
+    .util li:first-child{margin-left:20px;}
+    .util li:first-child a{padding-left:0;}
+    .util li:last-child{border:none;}
+    .util li:last-child a{padding-right:0;}
+
+    .util li a{
+        height:50px;
+        padding:10px;
+        padding-right:25px;
+    }
+    .util li:hover a{
+        font-weight: 400;
+    }
+    .logo{
+        display:block;
+        text-align:center;
+        position:absolute;
+        top:-5px; left:50%;
+        transform: translateX(-50%);
+    }
+    .logo>a>img{width:130px;}
+    .gnb{
+        display:none;
+        position:relative;
+        padding:0;
+        margin:0 auto;
+        text-align:center;
+    }
+    .gnb>li{
+        margin:15px 0px;
+    }
+    .gnb>li:hover>a{font-weight: 400;}
+    .gnb>li>a{
+        font-size:1.2rem;
+        font-weight: 300;
+        padding:15px 0px;
+    }
+    .sub_gnb{
+        display: none;
+        margin:5px 0;
+        padding:0;
+        background: rgba(255,255,255,0.5);
+    }
+    .sub_gnb>li{
+        padding:3px 0px;
+    }
+    .sub_gnb>li>a{
+        font-size:1.1rem;
+        font-weight: 300;
+    }
+    .sub_gnb>li:hover{
+        background: rgba(0,0,0,0.3);
+        font-weight: 400;
+        color:#fff;
+    }
+    .sub_gnb>li:hover a{font-weight: 400; color:#fff;}
+    .mobile_btn{
+		display:block;
+		width:60px;height:auto;
+		margin-left:20px;
+	}
+	.mobile_btn>span{
+		display:block;
+		background:#666;
+		width:60px;
+		height:4px;
+		transition:all .3s;
+		cursor:pointer;
+	}
+    .mobile_btn>span:nth-child(2){
+		margin:15px 0px;
+	}
+	.menuAni{
+		background:transparent;
+		position:relative;
+		width:60px;
+		z-index:99;
+	}
+	.mobile_btn.menuAni>span{
+		background:transparent;
+		transition:all .3s;
+	}
+	.menuAni::before{
+		content:'';
+		display:block;
+		width:60px; height:4px;
+		top:20px; left:0;
+		text-align:center;
+		transform:rotate(-45deg);
+		position:absolute;
+		background:#666;
+	}
+	.menuAni::after{
+		content:'';
+		display:block;
+		width:60px; height:4px;
+		top:20px; left:0;
+		text-align:center;
+		transform:rotate(45deg);
+		position:absolute;
+		background:#666;
+	}
+
+    /*고객센터*/
+
+    .cscenter{
+        width:90%;
+        margin:0 auto;
+        text-align:center;
+        position:relative;
+        margin-top:50px;
+    }
+    .title{
+        font-size:1.2rem;
+        font-weight: 400;
+        font-family:'G마켓 산스 TTF', sans-serif;
+        margin-bottom: 20px;
+        font-weight: 200;
+    }
+    .cscenter>div{
+        background: #CBD2DB;
+        padding:30px 0;
+        text-align: center;
+    }
+    .cscenter>div>a>p{
+        font-size:1.3rem;
+        font-weight: 400;
+    }
+
+    /*공지사항 버튼*/
+
+    .notice{
+        width:90%;
+        margin:0 auto;
+        text-align:center;
+        position:relative;
+        margin-top:50px;
+    }
+    .title{
+        font-size:1.2rem;
+        font-weight: 400;
+        font-family:'G마켓 산스 TTF', sans-serif;
+        margin-bottom: 20px;
+    }
+    .notice>div{
+        background: #B3E2E7;
+        padding:30px 0;
+        text-align: center;
+    }
+    .notice>div>a{padding:30px 0;}
+    .notice>div>a>p{
+        font-size:1.3rem;
+        font-weight: 400;
+    }
+
+    /*FAQ*/
+
+    .faq{
+        width:95%;
+        margin:0 auto;
+        text-align: center;
+        position:relative;
+        margin-top:50px;
+    }
+    .title{
+        font-size:1.5rem;
+        font-weight: 400;
+        font-family:'G마켓 산스 TTF', sans-serif;
+        margin-bottom:20px;
+    }
+    .faq>div{
+        border:2px solid #333;
+        width:95%; height:200px;
+    }
+    .faq>div>p{
+        font-size:1.4rem;
+        font-weight: 400;
+        font-family:'G마켓 산스 TTF', sans-serif;
+        margin-top:20px;
+        margin-left:20px;
+    }
+    .faq>div>input{
+        width:65%;
+        height:38px;
+        position:absolute;
+        top:50%; left:50%;
+        transform: translateX(-50%);
+        font-size: 1.4rem;
+        color:#333;
+    }
+    .faq>div img{
+        width:40px; height: 40px;
+        position:absolute;
+        top:50%; right:10%;
+        border:1.5px solid #333;
+    }
+    /*FAQ 질문 리스트*/
+
+    .list{
+        width:90%; height:620px;
+        margin:100px auto;
+        text-align: left;
+        position:relative;
+        margin-top:50px;
+        background: #B3E2E7;
+        position:relative;
+    }
+    .list>div>.table{
+        width:90%;
+        margin:50px auto;
+        text-align:center;
+        background: #fff;
+        border-collapse: collapse;
+        font-family:'G마켓 산스 TTF', sans-serif;
+        font-weight: 300;
+        font-size:0.9rem;
+        position:absolute;
+        top:-20px; left:50%; 
+        transform: translateX(-50%);
+    }
+    .list>div>.table td{
+        padding:15px 0;
+    }
+    .more_info{
+        vertical-align: middle;
+        cursor: pointer;
+        padding-left:50%;
+    }
+
+    /*footer*/
+
+    .footer{
+        width:100%;
+        margin:0 auto;
+        text-align:center;
+        position:relative;
+        font-family: 'G마켓 산스 TTF', sans-serif;
+        background-color:#B3E2E7;
+    }
+    .footer ul{padding:0;}
+    .footer_logo img{width:20%;}
+    .f_menu>li{
+        display:inline-block;
+        margin:0px 15px 20px 15px;
+    }
+    .f_menu>li>a{
+        font-size:1.1rem;
+        font-weight: 300;
+    }
+    .f_info{
+        font-size:1rem;
+        font-weight: 300;
+        text-align:center;
+    }
+    .f_sns>ul>li{
+        display:inline-block;
+        margin:15px 15px 15px 15px;
+    }
+    .f_sns>ul>li img{
+        width:50px;
+    }
+    .cs>ul>li h3{
+        font-size:1.1rem;
+        font-weight:300;
+    }
+    .cs>ul>li p{
+        font-size:1.3rem;
+        padding:5px 0px;
+        color:#333;
+    }
+    .cs>ul>li span{
+        font-size:1.1rem;
+        font-weight:300;
+        margin-bottom:50px;
+    }
+}

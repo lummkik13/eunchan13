@@ -1,0 +1,280 @@
+@charset "utf-8";
+@media all and (min-width:1024px){
+    *{margin:0; padding:0; list-style: none;}
+    a:link,a:visited,a:hover,a:active{
+        color:#333;
+        text-decoration: none;
+        font-family: 'G마켓 산스 TTF', sans-serif;
+        font-weight: 300;
+    }
+    .clear::after{
+        content:'';
+        display:block;
+        clear:both;
+        width:0; height:0;
+        visibility:hidden;
+    }
+    .header{
+        width:100%; height:120px;
+        margin:0 auto;
+        text-align: center;
+        position:relative;
+        z-index: 9999;
+        background: #B3E2E7;
+    }
+    .util{
+        position:absolute;
+        right:10px;
+        top:10px;
+        cursor:pointer;
+        z-index:999;
+    }
+    .util>ul>li{
+        float:left;
+        padding:0px 10px;
+        border-right:1px solid #333;
+        font-size:0.7rem;
+        font-weight: 200;
+    }
+    .util>ul li:last-child{border:0;}
+
+    .logo{
+        position:absolute;
+        left:5%;
+    }
+    nav{
+        width:100%;
+        position:absolute;
+        left:32%;
+        font-weight: 200;
+    }
+    .gnb{position:absolute; top:8px;}
+    .gnb>li{
+        float:left;
+        width:200px;
+        font-size:1.2rem;
+    }
+    .gnb>li>a{
+        width:100%; height:100px;
+        line-height:100px;
+        position:relative;
+    }
+    .gnb>li>a:hover{font-weight: 400; }
+    .sub_gnb{
+        width:1920px; height:70px;
+        display:none;
+        position:absolute;
+        margin:12px auto;
+        text-align:center;
+        background:rgba(0, 0, 0, 0.4);
+        left:-77%;
+    }
+    .sub_gnb>li{
+        display:inline-block;
+        margin:0 30px;
+        line-height:3.4;
+    }
+    .sub_gnb>li:last-child{margin-right:100px;}
+    .sub_gnb>li>a{color:#fff;}
+    .sub_gnb>li:hover>a{font-weight:400;}
+
+    /*1:1문의 버튼*/
+    .cscenter{
+        width:1600px;
+        margin:0 auto;
+        text-align:left;
+        position:relative;
+        margin-top:100px;
+    }
+    .title{
+        font-size:1.5rem;
+        font-weight: 400;
+        font-family:'G마켓 산스 TTF', sans-serif;
+        margin-bottom: 20px;
+    }
+    .cscenter>div{
+        background: #CBD2DB;
+        padding:30px 0;
+        text-align: center;
+    }
+    .cscenter>div>a>p{
+        font-size:1.3rem;
+        font-weight: 400;
+    }
+
+    /*공지사항 버튼*/
+
+    .notice{
+        width:1600px;
+        margin:0 auto;
+        text-align:left;
+        position:relative;
+        margin-top:50px;
+    }
+    .title{
+        font-size:1.5rem;
+        font-weight: 400;
+        font-family:'G마켓 산스 TTF', sans-serif;
+        margin-bottom: 20px;
+    }
+    .notice>div{
+        background: #B3E2E7;
+        padding:30px 0;
+        text-align: center;
+    }
+    .notice>div>a{padding:30px 0;}
+    .notice>div>a>p{
+        font-size:1.3rem;
+        font-weight: 400;
+    }
+
+    /*FAQ*/
+
+    .faq{
+        width:1600px;
+        margin:0 auto;
+        text-align: left;
+        position:relative;
+        margin-top:50px;
+    }
+    .title{
+        font-size:1.5rem;
+        font-weight: 400;
+        font-family:'G마켓 산스 TTF', sans-serif;
+        margin-bottom:20px;
+    }
+    .faq>div{
+        border:2px solid #333;
+        width:100%; height:200px;
+    }
+    .faq>div>p{
+        font-size:1.4rem;
+        font-weight: 400;
+        font-family:'G마켓 산스 TTF', sans-serif;
+        margin-top:20px;
+        margin-left:20px;
+    }
+    .faq>div>input{
+        width:1000px;
+        height:40px;
+        position:absolute;
+        top:50%; left:50%;
+        transform: translateX(-50%);
+        font-size: 1.4rem;
+        color:#333;
+    }
+    .faq>div img{
+        width:40px; height: 40px;
+        position:absolute;
+        top:50%; right:15%;
+        border:1.5px solid #333;
+    }
+
+    /*FAQ 질문 리스트*/
+
+    .list{
+        width:1600px; height:620px;
+        margin:150px auto;
+        text-align: left;
+        position:relative;
+        margin-top:50px;
+        background: #B3E2E7;
+        position:relative;
+    }
+    .list>div>.table{
+        width:1500px;
+        margin:50px auto;
+        text-align:center;
+        background: #fff;
+        border-collapse: collapse;
+        font-family:'G마켓 산스 TTF', sans-serif;
+        font-weight: 300;
+        font-size:1.3rem;
+        position:absolute;
+        top:-20px; left:50%; 
+        transform: translateX(-50%);
+    }
+    .list>div>.table td{
+        padding:15px 0;
+    }
+    .more_info{
+        vertical-align: middle;
+        cursor: pointer;
+        padding-left:850px;
+    }
+    .answer{
+        display:block;
+        width:1100px;
+        border:1px solid #333;
+        margin:30px auto;
+    }
+    .answer>div:first-child{
+        width:1000px;
+        height:60px;
+        border:1px solid #333;
+        margin:20px auto;
+        text-align:left;
+        font-size:1.2rem;
+        line-height:3.4;
+    }
+    .answer>div:last-child{
+        width:1000px;
+        height:150px;
+        border:1px solid #333;
+        margin:20px auto;
+        text-align:left;
+        font-size:1.2rem;
+    }
+
+    /*footer*/
+
+    .footer{background: #B3E2E7;}
+    footer{
+        width:1600px;
+        margin:0 auto; 
+        text-align: center;
+        font-family: 'G마켓 산스 TTF', sans-serif;
+        display: flex;
+        justify-content: space-between;
+    }
+    .f_menu li{
+        float:left;
+        margin-left:100px;
+        padding-top:40px;
+    }
+    .f_menu li a{font-weight: 300;}
+    .f_menu li a:hover{font-weight: 400;}
+    .f_menu li:first-child{margin-left:0;}
+
+    .cs ul li h3{
+        font-size:1.1rem;
+        font-weight: 300;
+        margin-top:40px;
+        color:#333;
+    }
+    .cs ul li p{
+        font-size:1.5rem;
+        font-weight: 400;
+        margin-top:5px;
+        color:#333;
+    }
+    .cs ul li span{
+        font-size:1.2rem;
+        font-weight: 300;
+        margin-top:5px;
+        color:#333;
+    }
+    .f_info{
+        font-size:0.9rem;
+        font-weight: 200;
+        margin-top:20px;
+        color:#333;
+    }
+    .f_sns ul li{
+        display:inline-block;
+        margin:30px 20px 0px 20px;
+    }
+    .f_sns img{
+        width:50px; height:50px;
+    }
+}
